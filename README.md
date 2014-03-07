@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -31,3 +32,6 @@ point your browser to:
 
 http://localhost:8808/RainGauge/
 
+=======
+gempagempa
+>>>>>>> 05dbff49995a435f15533410574bbae63eb91501
