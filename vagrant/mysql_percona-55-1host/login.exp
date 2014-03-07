@@ -1,0 +1,15 @@
+#!/usr/bin/expect
+set timeout 5
+set user [lindex $argv 0]
+set host [lindex $argv 1]
+set pass [lindex $argv 2]
+spawn ssh -q ${user}@${host}
+expect "assword"
+send "$pass\r"
+expect "${user}@"
+send "sudo userdel -r roger\r"
+expect "assword"
+send "$pass\r"
+expect "${user}@"
+send "exit\r"
+interact
